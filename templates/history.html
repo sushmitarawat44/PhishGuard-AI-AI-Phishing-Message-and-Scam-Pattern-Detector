@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scan History | PhishGuard AI</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body><nav class="nav"><a class="brand" href="{{ url_for('index') }}"><span class="shield">◆</span> PhishGuard <b>AI</b></a><div><a href="{{ url_for('index') }}">Analyzer</a><a href="{{ url_for('history') }}">History</a><a href="{{ url_for('about') }}">About</a></div></nav>
+<main class="container"><section class="hero compact"><div class="eyebrow">YOUR RECENT SCANS</div><h1>Scan history</h1><p>Recent analyses stored locally in a CSV file.</p></section>
+<section class="panel"><h2>Recent messages</h2>{% if rows %}<div class="table-wrap"><table><thead><tr><th>Time</th><th>Message preview</th><th>Result</th><th>Score</th><th>Warnings</th></tr></thead><tbody>
+{% for row in rows %}<tr><td>{{ row.timestamp }}</td><td>{{ row.message_preview }}</td><td>{{ row.risk_label }}</td><td>{{ row.model_score }}</td><td>{{ row.warning_count }}</td></tr>{% endfor %}
+</tbody></table></div>{% else %}<p>No scans yet. Analyze a message first.</p>{% endif %}</section></main><footer>PhishGuard AI · History is stored on this computer</footer></body></html>

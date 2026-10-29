@@ -1,0 +1,7 @@
+timestamp,message_preview,risk_label,model_score,warning_count
+2026-10-29T23:37:22,"Subject: URGENT: Your PayPal Account Has Been Limited – Verify Now! Dear Customer, We noticed unusual activity on your a",Potential Risk,0.651,2
+2026-10-29T23:39:47,URGENT: Your bank account will be blocked today! Verify your account immediately by clicking this suspicious link and en,Potential Risk,0.681,2
+2026-10-29T23:40:18,"Congratulations! You have won ₹25,00,000 in our lucky draw. Pay a processing fee immediately to claim your prize.",Potential Risk,0.645,2
+2026-10-29T23:45:54,"Dear customer, your account requires verification. Share the OTP received on your phone with our representative to preve",Potential Risk,0.572,1
+2026-10-30T00:33:55,"Dear customer, your KYC has expired. Update your details immediately using this link: http://kyc-update.example.com or y",Potential Risk,0.595,2
+2026-10-30T00:35:35,Subject: URGENT: Bank Account Suspended Test email Email message URGENT! Your bank account has been suspended due to sus,High Risk,0.731,4
